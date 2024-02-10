@@ -1,17 +1,23 @@
-import { Link, useMatch, useResolvedPath } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./navbar.css";
 
 export default function Navbar() {
   return (
     <nav className="nav">
-      <Link to="/" className="site-title">
-        Portfolio
-      </Link>
+      <h2 className="site-title">Portfolio</h2>
       <ul>
-        <CustomLink to="/home">Home</CustomLink>
-        <CustomLink to="/about">About</CustomLink>
-        <CustomLink to="/projects">Projects</CustomLink>
-        <CustomLink to="/contactme">Contact Me</CustomLink>
+        <li>
+          <NavLink to="/">Home</NavLink>
+        </li>
+        <li>
+          <NavLink to="/about">About</NavLink>
+        </li>
+        <li>
+          <NavLink to="/projects">Projects</NavLink>
+        </li>
+        <li>
+          <NavLink to="/contactme">Contact Me</NavLink>
+        </li>
         <li>
           <a
             href="https://acrobat.adobe.com/id/urn:aaid:sc:US:81ee833f-0756-4805-b8fb-fd4500ae7a6c"
@@ -24,17 +30,5 @@ export default function Navbar() {
         </li>
       </ul>
     </nav>
-  );
-}
-
-function CustomLink({ to, children, ...props }) {
-  const resolvedPath = useResolvedPath(to);
-  const isActive = useMatch({ path: resolvedPath.pathname, end: true });
-  return (
-    <li className={isActive ? "active" : ""}>
-      <Link to={to} {...props}>
-        {children}
-      </Link>
-    </li>
   );
 }
