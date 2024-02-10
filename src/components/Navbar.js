@@ -1,11 +1,18 @@
-import { NavLink } from "react-router-dom";
+import React, { useState } from "react";
+import { Link, NavLink } from "react-router-dom";
 import "./navbar.css";
 
-export default function Navbar() {
+export const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
   return (
     <nav className="nav">
       <h2 className="site-title">Portfolio</h2>
-      <ul>
+      <div className="menu" onClick={() => setMenuOpen(!menuOpen)}>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul className={menuOpen ? "open" : ""}>
         <li>
           <NavLink to="/">Home</NavLink>
         </li>
@@ -19,16 +26,16 @@ export default function Navbar() {
           <NavLink to="/contactme">Contact Me</NavLink>
         </li>
         <li>
-          <a
-            href="https://acrobat.adobe.com/id/urn:aaid:sc:US:81ee833f-0756-4805-b8fb-fd4500ae7a6c"
+          <Link
+            to="https://acrobat.adobe.com/id/urn:aaid:sc:US:81ee833f-0756-4805-b8fb-fd4500ae7a6c"
             target="_blank"
             rel="noreferrer"
-            class="resume-link"
+            className="resume-link"
           >
             Resume
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>
   );
-}
+};
