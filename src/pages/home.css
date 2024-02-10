@@ -1,0 +1,28 @@
+.home-page {
+  text-align: center;
+}
+
+.hero {
+  padding: 50px;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.hero img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+hr {
+  color: red;
+  border-style: dashed;
+}
