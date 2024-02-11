@@ -1,4 +1,4 @@
-import "./home.css";
+import "../css/home.css";
 import hero from "../images/profile-pic.jpg";
 export const Home = () => {
   return (

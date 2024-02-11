@@ -1,10 +1,10 @@
-import "./projects.css";
+import "../css/projects.css";
 export default function Projects() {
   return (
-    <div className="page-content">
+    <div className="project-content">
       <h1>Projects</h1>
       <br />
-      <div className="project-content">
+      <div className="project-block">
         Elit est qui do aute ad anim consectetur aliqua amet minim sint.
         Voluptate pariatur velit excepteur veniam ex aute eiusmod sint elit
         proident. Adipisicing velit anim proident deserunt veniam ullamco non.
@@ -50,7 +50,7 @@ export default function Projects() {
         ea elit reprehenderit incididunt excepteur amet amet.
       </div>
       <br />
-      <div>
+      <div className="project-block">
         Elit est qui do aute ad anim consectetur aliqua amet minim sint.
         Voluptate pariatur velit excepteur veniam ex aute eiusmod sint elit
         proident. Adipisicing velit anim proident deserunt veniam ullamco non.
@@ -96,7 +96,7 @@ export default function Projects() {
         ea elit reprehenderit incididunt excepteur amet amet.
       </div>
       <br />
-      <div>
+      <div className="project-block">
         Elit est qui do aute ad anim consectetur aliqua amet minim sint.
         Voluptate pariatur velit excepteur veniam ex aute eiusmod sint elit
         proident. Adipisicing velit anim proident deserunt veniam ullamco non.
@@ -142,7 +142,7 @@ export default function Projects() {
         ea elit reprehenderit incididunt excepteur amet amet.
       </div>
       <br />
-      <div>
+      <div className="project-block">
         Elit est qui do aute ad anim consectetur aliqua amet minim sint.
         Voluptate pariatur velit excepteur veniam ex aute eiusmod sint elit
         proident. Adipisicing velit anim proident deserunt veniam ullamco non.

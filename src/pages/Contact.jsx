@@ -1,5 +1,5 @@
 import emailjs from "emailjs-com";
-import "./contact.css";
+import "../css/contact.css";
 
 export const Contact = () => {
   const SERVICE_ID = "service_la59841";
