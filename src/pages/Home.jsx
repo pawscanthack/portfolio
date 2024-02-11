@@ -1,5 +1,5 @@
 import "../css/home.css";
-import hero from "../images/profile-pic.jpg";
+import hero from "../img/profile-pic.jpg";
 export const Home = () => {
   return (
     <div className="home-page">

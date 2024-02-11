@@ -1,6 +1,8 @@
-.project-content {
-  background-color: blue;
+.project-section-container {
+  display: flex;
 }
-.project-block {
-  background-color: red;
+
+.project-section-container img {
+  border-radius: 8px;
+  max-width: 25%;
 }

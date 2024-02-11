@@ -1,0 +1,25 @@
+{
+  "portfolio": [
+    {
+      "id": "1",
+      "src": "/images/placeholder-image.png",
+      "title": "Skillzguide Website",
+      "description": "AI-driven mapping between job postings and college programs using ONET database",
+      "link": "View In Github"
+    },
+    {
+      "id": "2",
+      "src": "/images/placeholder-image-1.png",
+      "title": "Calculator - React",
+      "description": "Simple calculator project built using React",
+      "link": "View In Github"
+    },
+    {
+      "id": "3",
+      "src": "/images/placeholder-image-2.png",
+      "title": "Tic Tac Toe - React",
+      "description": "Tic Toe Toe game built using React",
+      "link": "View In Github"
+    }
+  ]
+}
