@@ -8,9 +8,9 @@ export const Home = () => {
         <p>
           What do you want me to say? This is my super cool portfolio site that
           is built with React.
-          <hr />
-          Under Construction
         </p>
+        <hr />
+        <p>Under Construction</p>
         <img src={hero} alt="Portfolio" />
       </div>
     </div>
