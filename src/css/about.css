@@ -2,11 +2,22 @@
   display: grid;
   grid-template-columns: repeat(2, auto);
   gap: 20px;
+  max-height: 100vh;
 }
 
 .about-section-image {
   max-width: 20vw;
   min-width: 10rem;
+}
+.linkedin-link-container {
+  display: block;
+}
+.linkedin-link {
+  text-decoration: none;
+}
+
+.linkedin-logo {
+  max-width: 10vw;
 }
 
 @media (max-width: 540px) {

@@ -1,5 +1,7 @@
 import "../css/about.css";
 import aboutPic from "../img/BC_grad.jpeg";
+import linkedInLogo from "../img/LI-In-Bug.png";
+
 export const About = () => {
   return (
     <section className="about-section">
@@ -48,6 +50,21 @@ export const About = () => {
               <br />- Proficient in project management methodologies (Scrum,
               Agile) and communication skills
             </p>
+          </div>
+          <div className="linkedin-link-container">
+            <a
+              href="https://github.com/pawscanthack"
+              target="_blank"
+              rel="noreferrer"
+              className="linkedin-link"
+            >
+              <img
+                src={linkedInLogo}
+                alt="LinkedIn Logo"
+                className="linkedin-logo"
+              />
+              <p>Visit my LinkedIn page</p>
+            </a>
           </div>
         </div>
       </div>
