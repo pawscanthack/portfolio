@@ -1,5 +1,5 @@
 import "../css/about.css";
-
+import aboutPic from "../img/BC_grad.jpeg";
 export const About = () => {
   return (
     <section className="about-section">
@@ -7,11 +7,7 @@ export const About = () => {
         <h1>Hello, my name is Scott Davis</h1>
       </div>
       <div className="about-section-container">
-        <img
-          src="../images/BC_grad.jpeg"
-          alt="BC grad"
-          className="about-section-image"
-        />
+        <img src={aboutPic} alt="BC grad" className="about-section-image" />
         <div className="about-content-container">
           <div className="about-content">
             <p>

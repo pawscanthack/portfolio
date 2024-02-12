@@ -5,7 +5,8 @@
 }
 
 .about-section-image {
-  max-height: 40vh;
+  max-width: 20vw;
+  min-width: 10rem;
 }
 
 @media (max-width: 540px) {
