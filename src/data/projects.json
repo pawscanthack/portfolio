@@ -20,6 +20,13 @@
       "title": "Tic Tac Toe - React",
       "description": "Tic Toe Toe game built using React",
       "link": "https://react-tic-tac-toe-olive-psi.vercel.app/"
+    },
+    {
+      "id": "4",
+      "src": "/images/placeholder-image-2.png",
+      "title": "Simple Portfolio - React",
+      "description": "Simple Portfolio built using React",
+      "link": "https://react-portfolio-with-tailwind.vercel.app/"
     }
   ]
 }
