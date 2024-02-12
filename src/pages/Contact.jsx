@@ -21,45 +21,50 @@ export const Contact = () => {
   //   e.target.reset();
   // };
   return (
-    <div>
-      <form className="form-container">
-        <h2>Send me a message. Let's have a chat!</h2>
-        <div className="form-element">
-          <label htmlFor="from_name">Name</label>
-          <input
-            type="text"
-            id="from_name"
-            name="from_name"
-            placeholder="Your name.."
-            required
-          />
-        </div>
+    <section className="contact-section">
+      <div className="contact-section-container">
+        <div></div>
+        <div>
+          <form className="form-container">
+            <h2>Send me a message. Let's have a chat!</h2>
+            <div className="form-element">
+              <label htmlFor="from_name">Name</label>
+              <input
+                type="text"
+                id="from_name"
+                name="from_name"
+                placeholder="Your name.."
+                required
+              />
+            </div>
 
-        <div className="form-element">
-          <label>E-mail</label>
-          <input
-            type="email"
-            id="from_email"
-            name="from_email"
-            placeholder="Your email.."
-            required
-          />
-        </div>
+            <div className="form-element">
+              <label>E-mail</label>
+              <input
+                type="email"
+                id="from_email"
+                name="from_email"
+                placeholder="Your email.."
+                required
+              />
+            </div>
 
-        <div className="form-element">
-          <label htmlFor="message">Message</label>
-          <textarea
-            name="message"
-            rows="8"
-            cols="30"
-            placeholder="Your message.."
-            required
-          />
+            <div className="form-element">
+              <label htmlFor="message">Message</label>
+              <textarea
+                name="message"
+                rows="8"
+                cols="30"
+                placeholder="Your message.."
+                required
+              />
+            </div>
+            <button type="submit" className="formButton">
+              Submit
+            </button>
+          </form>
         </div>
-        <button type="submit" className="formButton">
-          Submit
-        </button>
-      </form>
-    </div>
+      </div>
+    </section>
   );
 };
