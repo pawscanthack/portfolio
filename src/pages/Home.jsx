@@ -2,17 +2,19 @@ import "../css/home.css";
 import hero from "../img/profile-pic.jpg";
 export const Home = () => {
   return (
-    <div className="home-page">
-      <div className="hero">
-        <h1>Welcome to My Portfolio</h1>
-        <p>
-          What do you want me to say? This is my super cool portfolio site that
-          is built with React.
-        </p>
-        <hr />
-        <p>Under Construction</p>
-        <img src={hero} alt="Portfolio" />
+    <section className="home-section">
+      <div className="home-section-container">
+        <img src={hero} alt="profile" className="home-section-image" />
+        <div className="home-header">
+          <h1>Welcome to My Portfolio</h1>
+          <p>What can I do for you?</p>
+          <ul>
+            <li>Systems Administration</li>
+            <li>Cybersecurity</li>
+            <li>Application Development</li>
+          </ul>
+        </div>
       </div>
-    </div>
+    </section>
   );
 };

@@ -1,5 +1,6 @@
 import data from "../data/projects.json";
 import "../css/projects.css";
+import gitLogo from "../img/github-mark.png";
 
 export const Projects = () => {
   return (
@@ -34,6 +35,17 @@ export const Projects = () => {
               </div>
             </div>
           ))}
+        </div>
+        <div className="github-link-container">
+          <a
+            href="https://github.com/pawscanthack"
+            target="_blank"
+            rel="noreferrer"
+            className="github-link"
+          >
+            <img src={gitLogo} alt="Github Logo" />
+            <p>Visit my GitHub page</p>
+          </a>
         </div>
       </div>
     </section>

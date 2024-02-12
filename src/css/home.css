@@ -1,28 +1,20 @@
-.home-page {
-  text-align: center;
+.home-section-container {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 20px;
 }
 
-.hero {
-  padding: 50px;
+.home-section-image {
+  max-width: 20vw;
+  min-width: 10rem;
 }
 
-.hero h1 {
-  font-size: 2.5em;
-  margin-bottom: 20px;
-}
-
-.hero p {
-  font-size: 1.2em;
-  margin-bottom: 20px;
-}
-
-.hero img {
-  max-width: 100%;
-  max-height: 400px;
-  margin-top: 20px;
-}
-
-hr {
-  color: red;
-  border-style: dashed;
+@media (max-width: 540px) {
+  .home-section-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .home-section-image {
+    align-self: center;
+  }
 }

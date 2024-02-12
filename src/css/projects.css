@@ -20,6 +20,7 @@
   border-radius: 8px;
   max-width: 450px;
 }
-.project-link {
+.project-link,
+.github-link {
   text-decoration: none;
 }
