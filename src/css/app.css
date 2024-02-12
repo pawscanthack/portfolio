@@ -12,7 +12,9 @@ body {
   background-color: rgb(37, 61, 167);
 }
 .container {
+  display: flex;
   align-items: center;
+  justify-content: space-around;
   margin: auto;
   text-align: center;
   max-width: 80vw;

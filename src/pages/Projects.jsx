@@ -12,7 +12,13 @@ export const Projects = () => {
           {data?.portfolio?.map((item, index) => (
             <div key={index}>
               <div className="project-content">
-                <img src={item.src} alt={item.src} className="project-image" />
+                <div className="project-image-container">
+                  <img
+                    src={item.src}
+                    alt={item.src}
+                    className="project-image"
+                  />
+                </div>
                 <div>
                   <h3>{item.title}</h3>
                   <p>{item.description}</p>

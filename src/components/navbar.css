@@ -70,7 +70,7 @@ a.resume-link:hover {
   color: rgb(202, 147, 43) !important;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 540px) {
   nav .menu {
     display: flex;
   }

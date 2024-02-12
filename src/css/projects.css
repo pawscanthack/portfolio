@@ -7,13 +7,18 @@
 .project-section-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: baseline;
 }
 .project-content {
   padding: 20px;
 }
+.project-image-container {
+  display: block;
+}
 .project-image {
   border-radius: 8px;
+  max-width: 450px;
 }
 .project-link {
   text-decoration: none;
