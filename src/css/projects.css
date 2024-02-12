@@ -1,8 +1,19 @@
+.project-section {
+  padding: 10px;
+}
+.project-section-heading {
+  font-weight: bold;
+}
 .project-section-container {
   display: flex;
+  flex-wrap: wrap;
 }
-
-.project-section-container img {
+.project-content {
+  padding: 20px;
+}
+.project-image {
   border-radius: 8px;
-  max-width: 25%;
+}
+.project-link {
+  text-decoration: none;
 }
