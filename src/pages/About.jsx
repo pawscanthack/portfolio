@@ -53,7 +53,7 @@ export const About = () => {
           </div>
           <div className="linkedin-link-container">
             <a
-              href="https://github.com/pawscanthack"
+              href="https://www.linkedin.com/in/scottdaviscyberpro/"
               target="_blank"
               rel="noreferrer"
               className="linkedin-link"
