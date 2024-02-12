@@ -4,10 +4,16 @@
   gap: 20px;
   max-height: 100vh;
 }
-
+.about-content {
+  text-align: left;
+}
 .about-section-image {
   max-width: 20vw;
   min-width: 10rem;
+  border-radius: 4rem;
+}
+.skills-list-container {
+  /* list-style: none; */
 }
 .linkedin-link-container {
   display: block;

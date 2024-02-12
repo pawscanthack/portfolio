@@ -2,11 +2,21 @@
   display: grid;
   grid-template-columns: repeat(2, auto);
   gap: 20px;
+  justify-content: space-around;
+  min-width: 80vw;
+  margin: 4rem;
+}
+.home-list-container {
+  display: flex;
+}
+.home-tag-list {
+  font-size: 4rem;
+  list-style-type: none;
 }
 
 .home-section-image {
-  max-width: 20vw;
-  min-width: 10rem;
+  width: 22rem;
+  border-radius: 20px;
 }
 
 @media (max-width: 540px) {
@@ -17,4 +27,11 @@
   .home-section-image {
     align-self: center;
   }
+}
+
+.contact-button {
+  background-color: rgb(15, 226, 15);
+  font-size: 2rem;
+  padding: 6px;
+  border-radius: 1rem;
 }

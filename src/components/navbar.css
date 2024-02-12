@@ -7,6 +7,7 @@ nav {
   color: white;
   position: sticky;
   top: 0;
+  min-height: 6rem;
 }
 
 nav .site-title {
@@ -38,10 +39,10 @@ nav ul li a {
   border-radius: 0.5rem;
 }
 
-.nav ul li a:not(.active):hover {
+nav ul li a:not(.active):hover {
   color: #777;
 }
-.nav ul li a.resume-link:hover {
+nav ul li a.resume-link:hover {
   color: rgb(202, 147, 43);
 }
 nav .menu {
@@ -68,6 +69,10 @@ nav .menu span {
 
 a.resume-link:hover {
   color: rgb(202, 147, 43) !important;
+}
+
+.active {
+  background-color: rgb(37, 61, 167);
 }
 
 @media (max-width: 540px) {
