@@ -1,0 +1,19 @@
+.about-section-container {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 20px;
+}
+
+.about-section-image {
+  max-height: 40vh;
+}
+
+@media (max-width: 540px) {
+  .about-section-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-section-image {
+    align-self: center;
+  }
+}
