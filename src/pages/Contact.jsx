@@ -1,4 +1,4 @@
-// import emailjs from "emailjs-com";
+import emailjs from "emailjs-com";
 import "../css/contact.css";
 import contactImage from "../img/scott-and-dogs-cropped.jpeg";
 
@@ -6,21 +6,20 @@ export const Contact = () => {
   const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
   const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
   const PUBLIC_KEY = process.env.REACT_APP_PUBLIC_KEY;
-  console.log(SERVICE_ID, TEMPLATE_ID, PUBLIC_KEY);
-  console.log(process.env.REACT_APP_SERVICE_ID);
-  // const handleOnSubmit = (e) => {
-  //   e.preventDefault();
-  //   emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, PUBLIC_KEY).then(
-  //     (result) => {
-  //       alert("Message Sent Successfully");
-  //     },
-  //     (error) => {
-  //       console.log(error.text);
-  //       alert("Something went wrong!");
-  //     }
-  //   );
-  //   e.target.reset();
-  // };
+  console.log(SERVICE_ID, typeof SERVICE_ID, TEMPLATE_ID, PUBLIC_KEY);
+  const handleOnSubmit = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(SERVICE_ID, TEMPLATE_ID, e.target, PUBLIC_KEY)
+      .then((result) => {
+        alert("Message Sent Successfully");
+        e.target.reset(); // Reset the form after successful submission
+      })
+      .catch((error) => {
+        console.error("Error sending message:", error);
+        alert("Something went wrong!");
+      });
+  };
   return (
     <section className="contact-section">
       <div className="contact-section-container">
@@ -32,7 +31,7 @@ export const Contact = () => {
           />
         </div>
         <div>
-          <form className="form-container">
+          <form className="form-container" onSubmit={handleOnSubmit}>
             <h2>Send me a message. Let's have a chat!</h2>
             <div className="form-element">
               <label htmlFor="from_name">Name</label>
