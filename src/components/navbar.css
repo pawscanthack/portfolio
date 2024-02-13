@@ -75,7 +75,7 @@ nav .menu span {
 }
 
 a.resume-link:hover {
-  color: rgb(202, 147, 43) !important;
+  color: var(--clr-neon-green) !important;
 }
 
 .active {
