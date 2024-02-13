@@ -1,5 +1,6 @@
 // import emailjs from "emailjs-com";
 import "../css/contact.css";
+import contactImage from "../img/scott-and-dogs-cropped.jpeg";
 
 export const Contact = () => {
   const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
@@ -23,7 +24,13 @@ export const Contact = () => {
   return (
     <section className="contact-section">
       <div className="contact-section-container">
-        <div></div>
+        <div className="contact-image-container">
+          <img
+            src={contactImage}
+            alt="contact target"
+            className="contact-section-image"
+          />
+        </div>
         <div>
           <form className="form-container">
             <h2>Send me a message. Let's have a chat!</h2>

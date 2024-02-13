@@ -44,7 +44,7 @@ export const About = () => {
               </li>
               <li>
                 Programming and scripting: Python, React, JavaScript, HTML, CSS,
-                SQL, Ansible, PowerShell, PHP, JavaScript, C++
+                SQL, Ansible, PowerShell, PHP, C++
               </li>
               <li>
                 Network Security and Administration: Wireshark, Nessus, Security
