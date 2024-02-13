@@ -17,7 +17,9 @@ export const Home = () => {
       </div>
       <div className="contact-button-container">
         <NavLink to="/contactme">
-          <button className="contact-button">Let's do it!</button>
+          <div>
+            <button className="contact-button">Let's go!</button>
+          </div>
         </NavLink>
       </div>
     </section>
