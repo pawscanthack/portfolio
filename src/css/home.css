@@ -1,7 +1,7 @@
 :root {
   /* --clr-neon: hsl(317 100% 54%); */
   --clr-bg: hsl(323 21% 16%);
-  --clr-neon-green: #2be709;
+  /* --clr-neon-green: #2be709; */
   --clr-neon: #0586ff;
 }
 
@@ -10,8 +10,8 @@
   grid-template-columns: repeat(2, auto);
   gap: 20px;
   justify-content: space-around;
-  min-width: 80vw;
-  margin: 4rem;
+  min-width: 70vw;
+  margin: 4rem 1rem 1rem 0;
 }
 .home-list-container {
   display: flex;
@@ -19,14 +19,16 @@
 .home-tag-list {
   font-size: 4rem;
   list-style-type: none;
+  text-align: justify;
 }
 
 .home-section-image {
-  width: 22rem;
+  max-width: 20em;
   border-radius: 20px;
+  padding: 1px;
 }
 
-@media (max-width: 540px) {
+@media (max-width: 600px) {
   .home-section-container {
     display: flex;
     flex-direction: column;

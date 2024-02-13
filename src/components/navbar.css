@@ -1,3 +1,10 @@
+:root {
+  /* --clr-neon: hsl(317 100% 54%); */
+  --clr-bg: hsl(323 21% 16%);
+  --clr-neon-green: #2be709;
+  --clr-neon: #0586ff;
+}
+
 nav {
   display: flex;
   flex-wrap: wrap;
@@ -40,7 +47,7 @@ nav ul li a {
 }
 
 nav ul li a:not(.active):hover {
-  color: #777;
+  color: var(--clr-neon);
 }
 nav ul li a.resume-link:hover {
   color: rgb(202, 147, 43);
@@ -75,7 +82,7 @@ a.resume-link:hover {
   background-color: rgb(37, 61, 167);
 }
 
-@media (max-width: 540px) {
+@media (max-width: 600px) {
   nav .menu {
     display: flex;
   }

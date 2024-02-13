@@ -18,7 +18,8 @@
 }
 .project-image {
   border-radius: 8px;
-  max-width: 450px;
+  max-width: 28em;
+  padding: 2em;
 }
 .project-link,
 .github-link {

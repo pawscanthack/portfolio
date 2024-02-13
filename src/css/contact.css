@@ -1,8 +1,11 @@
+:root {
+  /* --clr-neon: hsl(317 100% 54%); */
+  --clr-bg: hsl(323 21% 16%);
+  --clr-neon-green: #2be709;
+  --clr-neon: #0586ff;
+}
+
 .contact-section {
-  /* background-image: url("../img/scott-and-dogs.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position-x: left; */
   min-height: 100vh;
   min-width: 100vw;
   margin: 0;
@@ -14,7 +17,7 @@
   gap: 20px;
   justify-content: space-around;
   min-width: 80vw;
-  margin: 4rem;
+  margin: 6rem;
 }
 .contact-section-image {
   max-width: 30vw;
@@ -23,7 +26,7 @@
 }
 
 .form-container {
-  background-color: green;
+  background-color: rgb(69, 201, 245);
   margin: auto;
   display: flex;
   max-width: 60%;
@@ -67,12 +70,15 @@ textarea {
   cursor: pointer;
   box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.3);
   transform: translateX(-5px) translateY(-5px);
+  background-color: var(--clr-neon);
 }
 
 @media (max-width: 540px) {
   .contact-section-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    margin: 2em;
   }
   .contact-section-image {
     align-self: center;
