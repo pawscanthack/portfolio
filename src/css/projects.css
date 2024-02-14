@@ -25,3 +25,11 @@
 .github-link {
   text-decoration: none;
 }
+
+@media (max-width: 600px) {
+  .project-image {
+    border-radius: 8px;
+    max-width: 26em;
+    padding: 2em;
+  }
+}
