@@ -32,4 +32,8 @@
     max-width: 26em;
     padding: 2em;
   }
+
+  .github-link-container img {
+    max-width: 10em;
+  }
 }

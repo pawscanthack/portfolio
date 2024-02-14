@@ -43,7 +43,7 @@ export const Projects = () => {
             rel="noreferrer"
             className="github-link"
           >
-            <img src={gitLogo} alt="Github Logo" />
+            <img src={gitLogo} alt="Github Logo" className="github-logo" />
             <p>Visit my GitHub page</p>
           </a>
         </div>
