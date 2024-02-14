@@ -2,10 +2,10 @@
   "portfolio": [
     {
       "id": "1",
-      "src": "/images/placeholder-image.png",
-      "title": "Skillzguide Website",
-      "description": "AI-driven mapping between job postings and college programs",
-      "link": "https://github.com/pawscanthack"
+      "src": "/images/placeholder-image-2.png",
+      "title": "Password Reset Calculator - React",
+      "description": "Date Interval Calculator built using React",
+      "link": "https://date-interval-calculator.vercel.app/"
     },
     {
       "id": "2",
@@ -27,6 +27,13 @@
       "title": "Simple Portfolio - React",
       "description": "Simple Portfolio built using React",
       "link": "https://react-portfolio-with-tailwind.vercel.app/"
+    },
+    {
+      "id": "5",
+      "src": "/images/placeholder-image.png",
+      "title": "Skillzguide Website",
+      "description": "AI-driven mapping between job postings and college programs",
+      "link": "https://github.com/pawscanthack"
     }
   ]
 }
