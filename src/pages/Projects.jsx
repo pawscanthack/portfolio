@@ -14,24 +14,23 @@ export const Projects = () => {
             <div key={index}>
               <div className="project-content">
                 <div className="project-image-container">
-                  <img
-                    src={item.src}
-                    alt={item.src}
-                    className="project-image"
-                  />
+                  <a
+                    href={item.link}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="project-link"
+                  >
+                    <img
+                      src={item.src}
+                      alt={item.src}
+                      className="project-image"
+                    />
+                  </a>
                 </div>
                 <div>
                   <h3>{item.title}</h3>
                   <p>{item.description}</p>
                 </div>
-                <a
-                  href={item.link}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="project-link"
-                >
-                  Visit Project
-                </a>
               </div>
             </div>
           ))}
