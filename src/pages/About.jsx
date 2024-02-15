@@ -13,8 +13,8 @@ export const About = () => {
         <div className="about-content-container">
           <div className="about-content">
             <p>
-              I am a recent Cybersecurity and Network Administration Graduate
-              with a passion for application development
+              My name is Scott Davis. I am a recent Cybersecurity and Network
+              Administration Graduate with a passion for application development
             </p>
           </div>
           <div className="about-content">
