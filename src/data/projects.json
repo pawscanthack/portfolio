@@ -2,28 +2,28 @@
   "portfolio": [
     {
       "id": "1",
-      "src": "/images/placeholder-image-2.png",
+      "src": "/images/password-reset-calculator-sm.png",
       "title": "Password Reset Calculator - React",
       "description": "Date interval calculator built using React",
       "link": "https://date-interval-calculator.vercel.app/"
     },
     {
       "id": "2",
-      "src": "/images/placeholder-image-1.png",
+      "src": "/images/calculator-sm.png",
       "title": "Calculator - React",
       "description": "Simple calculator project built using React",
       "link": "https://react-calculator-phi-ecru.vercel.app/"
     },
     {
       "id": "3",
-      "src": "/images/placeholder-image-2.png",
+      "src": "/images/tic-tac-toe-sm.png",
       "title": "Tic Tac Toe - React",
       "description": "Tic Toe Toe game built using React",
       "link": "https://react-tic-tac-toe-olive-psi.vercel.app/"
     },
     {
       "id": "4",
-      "src": "/images/placeholder-image-2.png",
+      "src": "/images/react-portfolio-sm.png",
       "title": "Simple Portfolio - React",
       "description": "Simple Portfolio built using React",
       "link": "https://react-portfolio-with-tailwind.vercel.app/"
@@ -31,7 +31,7 @@
     {
       "id": "5",
       "src": "/images/placeholder-image.png",
-      "title": "Skillzguide Website",
+      "title": "Skillzguide Website - Flask",
       "description": "AI-driven mapping between job postings and college programs",
       "link": "https://github.com/pawscanthack"
     }
