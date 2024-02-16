@@ -30,7 +30,7 @@
 @media (max-width: 600px) {
   .project-image {
     border-radius: 8px;
-    max-width: 24em;
+    max-width: 22em;
     padding: 2em;
   }
   .project-content {
