@@ -27,12 +27,16 @@ export const About = () => {
           </div>
           <div className="about-content">
             <h2>Experience</h2>
-            <p>
-              Web Development Intern at Edmonds Community College (Spring 2019)
-              <br />
-              Front-end lead and API development for Cybersecurity Capstone
-              Project
-            </p>
+            <ul>
+              <li>
+                Web Development Intern at Edmonds Community College (Spring
+                2019)
+              </li>
+              <li>
+                Front-end lead and API development for Cybersecurity Capstone
+                Project
+              </li>
+            </ul>
           </div>
           <div className="about-content">
             <h2>Skills</h2>

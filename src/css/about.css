@@ -5,6 +5,10 @@
   max-height: 100vh;
   padding: 2em;
 }
+
+.about-content li {
+  padding-bottom: 1em;
+}
 .about-content {
   text-align: left;
 }
