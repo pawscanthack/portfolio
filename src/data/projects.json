@@ -18,7 +18,7 @@
       "id": "3",
       "src": "/images/tic-tac-toe-sm.png",
       "title": "Tic Tac Toe - React",
-      "description": "Tic Toe Toe game built using React",
+      "description": "Tic Tac Toe game built using React",
       "link": "https://react-tic-tac-toe-olive-psi.vercel.app/"
     },
     {
@@ -30,6 +30,13 @@
     },
     {
       "id": "5",
+      "src": "/images/react-trivia.png",
+      "title": "Trivia - React",
+      "description": "Get to know me through trivia",
+      "link": "https://react-trivia-beige.vercel.app/"
+    },
+    {
+      "id": "6",
       "src": "/images/skillzguide-home-sm.png",
       "title": "Skillzguide Website - Flask",
       "description": "AI-driven mapping between job postings and college programs",
