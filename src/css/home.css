@@ -16,11 +16,46 @@
 }
 .home-list-container {
   display: flex;
+  justify-content: center;
 }
 .home-tag-list {
   font-size: 4rem;
   list-style-type: none;
   text-align: justify;
+}
+
+.home-tag-list li {
+  opacity: 0; /* Initially hide all list items */
+}
+
+.home-tag-list li:nth-child(1) {
+  animation: slideAndFade 0.3s forwards;
+}
+
+.home-tag-list li:nth-child(2) {
+  animation: slideAndFade 0.3s forwards;
+  animation-delay: 0.8s; /* Delay for the second list item */
+}
+
+.home-tag-list li:nth-child(3) {
+  animation: slideAndFade 0.3s forwards;
+  animation-delay: 1.6s; /* Delay for the third list item */
+}
+
+.home-tag-list li:nth-child(4) {
+  animation: slideAndFade 0.3s forwards;
+  animation-delay: 2.4s; /* Delay for the last list item */
+}
+
+@keyframes slideAndFade {
+  0% {
+    opacity: 0;
+    transform: translateX(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
 }
 
 .home-section-image {
@@ -37,10 +72,19 @@
     margin: 1em 0;
   }
 }
+.contact-button-container {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.contact-button-container.show {
+  opacity: 1;
+}
 
 .contact-button {
   font-size: 3rem;
-
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
   display: inline-block;
   cursor: pointer;
   text-decoration: none;
@@ -48,13 +92,26 @@
   border: var(--clr-neon) 0.125em solid;
   padding: 0.25em 1em;
   border-radius: 0.25em;
-
   text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
-
   box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
-
   position: relative;
 }
+
+.contact-button.show {
+  opacity: 1;
+}
+
+.contact-button::before,
+.contact-button::after {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.contact-button.show::before,
+.contact-button.show::after {
+  opacity: 1;
+}
+
 .contact-button::before {
   pointer-events: none;
   content: "";
@@ -64,7 +121,6 @@
   left: 0;
   width: 100%;
   height: 100%;
-
   transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
   filter: blur(1em);
   opacity: 0.7;
