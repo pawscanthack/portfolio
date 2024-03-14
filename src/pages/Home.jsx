@@ -1,10 +1,22 @@
+import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { usePostHog } from "posthog-js/react";
-
 import "../css/home.css";
 import hero from "../img/profile-pic.jpg";
+
 export const Home = () => {
   const posthog = usePostHog();
+  const [showButton, setShowButton] = useState(false);
+
+  useEffect(() => {
+    // Set a timeout to show the button after the delay
+    const timeout = setTimeout(() => {
+      setShowButton(true);
+    }, 2400); // Delay in milliseconds
+
+    // Clear the timeout on component unmount
+    return () => clearTimeout(timeout);
+  }, []);
 
   return (
     <section className="home-section">
@@ -19,11 +31,11 @@ export const Home = () => {
           </ul>
         </div>
       </div>
-      <div className="contact-button-container">
+      <div className={`contact-button-container ${showButton ? "show" : ""}`}>
         <NavLink to="/contactme">
           <div>
             <button
-              className="contact-button"
+              className={`contact-button ${showButton ? "show" : ""}`}
               onClick={() => {
                 posthog.capture("contact_button_clicked", {
                   user_name: "Testing Testing 123",
