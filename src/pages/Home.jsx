@@ -12,7 +12,7 @@ export const Home = () => {
     // Set a timeout to show the button after the delay
     const timeout = setTimeout(() => {
       setShowButton(true);
-    }, 2400); // Delay in milliseconds
+    }, 2850); // Delay in milliseconds
 
     // Clear the timeout on component unmount
     return () => clearTimeout(timeout);
