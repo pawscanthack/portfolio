@@ -5,12 +5,15 @@ import { About } from "./pages/About";
 import { Projects } from "./pages/Projects";
 import { Contact } from "./pages/Contact";
 import "./css/app.css";
+import PostHogPageviewTracker from "./components/PostHogPageviewTracker";
 
 function App() {
   return (
     <>
       <Navbar />
       <div className="container">
+        <PostHogPageviewTracker />
+
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

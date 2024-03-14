@@ -11,6 +11,7 @@ root.render(
       apiKey="phc_gf3A5kJPqNTifLSxhVtBbcFGUmF9IPIbEbhsngBrl2Z"
       options={{
         host: "https://app.posthog.com",
+        capture_pageview: false,
       }}
     >
       <BrowserRouter>

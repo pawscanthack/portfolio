@@ -1,7 +1,11 @@
 import { NavLink } from "react-router-dom";
+import { usePostHog } from "posthog-js/react";
+
 import "../css/home.css";
 import hero from "../img/profile-pic.jpg";
 export const Home = () => {
+  const posthog = usePostHog();
+
   return (
     <section className="home-section">
       <div className="home-section-container">
@@ -18,7 +22,16 @@ export const Home = () => {
       <div className="contact-button-container">
         <NavLink to="/contactme">
           <div>
-            <button className="contact-button">Let's go!</button>
+            <button
+              className="contact-button"
+              onClick={() => {
+                posthog.capture("contact_button_clicked", {
+                  user_name: "Testing Testing 123",
+                });
+              }}
+            >
+              Let's go!
+            </button>
           </div>
         </NavLink>
       </div>
