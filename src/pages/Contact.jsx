@@ -7,7 +7,7 @@ export const Contact = () => {
   const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
   const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
   const PUBLIC_KEY = process.env.REACT_APP_PUBLIC_KEY;
-  // console.log(SERVICE_ID, typeof SERVICE_ID, TEMPLATE_ID, PUBLIC_KEY);
+  console.log(SERVICE_ID, typeof SERVICE_ID, TEMPLATE_ID, PUBLIC_KEY);
   const posthog = usePostHog();
   const handleOnSubmit = (e) => {
     e.preventDefault();
