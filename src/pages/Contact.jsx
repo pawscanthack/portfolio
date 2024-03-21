@@ -1,18 +1,24 @@
 import emailjs from "emailjs-com";
 import "../css/contact.css";
 import contactImage from "../img/scott-and-dogs-cropped.jpeg";
+import { usePostHog } from "posthog-js/react";
 
 export const Contact = () => {
   const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
   const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
   const PUBLIC_KEY = process.env.REACT_APP_PUBLIC_KEY;
-  console.log(SERVICE_ID, typeof SERVICE_ID, TEMPLATE_ID, PUBLIC_KEY);
+  // console.log(SERVICE_ID, typeof SERVICE_ID, TEMPLATE_ID, PUBLIC_KEY);
+  const posthog = usePostHog();
   const handleOnSubmit = (e) => {
     e.preventDefault();
     emailjs
       .sendForm(SERVICE_ID, TEMPLATE_ID, e.target, PUBLIC_KEY)
       .then((result) => {
         alert("Message Sent Successfully");
+        posthog.capture("Form Submitted Successfully", {
+          user_name: "Testing Testing 123",
+        });
+
         e.target.reset(); // Reset the form after successful submission
       })
       .catch((error) => {
@@ -65,7 +71,15 @@ export const Contact = () => {
                 required
               />
             </div>
-            <button type="submit" className="form-button">
+            <button
+              type="submit"
+              className="form-button"
+              onClick={() => {
+                posthog.capture("Attempted to Submit Form", {
+                  user_name: "Testing Testing 123",
+                });
+              }}
+            >
               Submit
             </button>
           </form>
