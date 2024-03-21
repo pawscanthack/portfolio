@@ -7,7 +7,7 @@ import { PostHogProvider } from "posthog-js/react";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 const POSTHOG_API_KEY = process.env.REACT_APP_POSTHOG_API_KEY;
 const POSTHOG_HOST = process.env.REACT_APP_POSTHOG_HOST;
-console.log(POSTHOG_API_KEY, POSTHOG_HOST);
+// console.log(POSTHOG_API_KEY, POSTHOG_HOST);
 root.render(
   <React.StrictMode>
     <PostHogProvider
