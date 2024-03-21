@@ -6,7 +6,7 @@ export const About = () => {
   return (
     <section className="about-section">
       <div className="about-section-heading">
-        <h1>Let's get to know each other!</h1>
+        <h1 hidden="true">Let's get to know each other!</h1>
       </div>
       <div className="about-section-container">
         <img src={aboutPic} alt="BC grad" className="about-section-image" />
