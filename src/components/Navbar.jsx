@@ -28,6 +28,7 @@ export const Navbar = () => {
         <li>
           <Link
             to="https://acrobat.adobe.com/id/urn:aaid:sc:US:81ee833f-0756-4805-b8fb-fd4500ae7a6c"
+            to="https://acrobat.adobe.com/id/urn:aaid:sc:US:d1795db8-9dd1-4191-aef8-43a0c0b76fbb"
             target="_blank"
             rel="noreferrer"
             className="resume-link"
