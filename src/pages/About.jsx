@@ -29,13 +29,9 @@ export const About = () => {
             <h2>Experience</h2>
             <ul>
               <li>
-                Web Development Intern at Edmonds Community College (Spring
-                2019)
+                Web Development Intern | Edmonds Community College
               </li>
-              <li>
-                Front-end lead and API development for Cybersecurity Capstone
-                Project
-              </li>
+              <li>Tony’s Computer & Network Services | IT Support Specialist | Internship </li>
             </ul>
           </div>
           <div className="about-content">
