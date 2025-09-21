@@ -27,7 +27,7 @@ export const Navbar = () => {
         </li>
         <li>
           <Link
-            to="https://acrobat.adobe.com/id/urn:aaid:sc:US:5ace854e-809b-419f-b602-524c77a0b8e0"
+            to="https://docs.google.com/document/d/1NNRRWGE41u_5BRpCLaYdtiqBAFT7xSr6/edit?usp=sharing&ouid=118177325970549515943&rtpof=true&sd=true"
             target="_blank"
             rel="noreferrer"
             className="resume-link"
