@@ -6,6 +6,7 @@
 }
 
 nav {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -115,7 +116,8 @@ nav .menu span {
 
   nav ul {
     align-items: center;
-    background-color: #10224e;
+    background-color: #091941a6;
+    backdrop-filter: blur(10px);
     right: 0;
     display: flex;
     position: absolute;
