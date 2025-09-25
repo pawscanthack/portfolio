@@ -13,16 +13,16 @@ export const Navbar = () => {
         <span></span>
       </div>
       <ul className={menuOpen ? "open" : ""}>
-        <li>
+        <li className="nav-link">
           <NavLink to="/">Home</NavLink>
         </li>
-        <li>
+        <li className="nav-link">
           <NavLink to="/about">About</NavLink>
         </li>
-        <li>
+        <li className="nav-link">
           <NavLink to="/projects">Projects</NavLink>
         </li>
-        <li>
+        <li className="nav-link">
           <NavLink to="/contactme">Contact Me</NavLink>
         </li>
         <li>
