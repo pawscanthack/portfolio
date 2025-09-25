@@ -48,6 +48,9 @@ nav ul li a {
   padding: 0.5rem;
   border-radius: 0.5rem;
   transition: background-color 0.3s ease, color 0.3s ease;
+  width: fit-content;
+  text-align: center;
+  margin: auto;
 }
 
 .nav-link a:not(.active):hover {
@@ -75,6 +78,8 @@ nav .menu span {
 .resume-link {
   background-color: #e2e2e2;
   color: black;
+  width: fit-content;
+  margin: auto;
 }
 
 .resume-link:hover {
@@ -84,6 +89,8 @@ nav .menu span {
 .active {
   background-color: rgb(37, 61, 167);
   transition: all 0.3s ease;
+  width: fit-content;
+  margin: auto;
 }
 
 .active:hover {
@@ -110,6 +117,7 @@ nav .menu span {
 
   nav ul.open {
     display: flex;
+    align-items: center;
   }
 
   nav ul li {
@@ -118,6 +126,6 @@ nav .menu span {
   }
 
   nav ul li a {
-    margin: 0.2rem 0.5rem;
+    margin: auto;
   }
 }
