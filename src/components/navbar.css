@@ -12,8 +12,10 @@ nav {
   background-color: #0f172a;
   color: white;
   padding: 0 2rem;
-  position: sticky;
+  position: fixed;
   top: 0;
+  z-index: 20;
+  width: 100%;
 }
 
 nav .site-title {
@@ -22,6 +24,7 @@ nav .site-title {
   text-decoration: none;
   color: white;
   transition: color 0.3s ease;
+  z-index: 20;
 }
 
 .site-title:hover {
@@ -100,24 +103,59 @@ nav .menu span {
 @media (max-width: 768px) {
   nav .menu {
     display: flex;
+    z-index: 20;
   }
 
   nav {
     flex-direction: column;
     align-items: flex-start;
     padding: 1rem 2rem;
+    z-index: 50;
   }
 
   nav ul {
-    display: none;
+    align-items: center;
+    background-color: #10224e;
+    right: 0;
+    display: flex;
+    position: absolute;
     flex-direction: column;
     width: 100%;
     margin-bottom: 0.25rem;
+    top: 2.8rem;
+    padding: 1rem 0;
+    opacity: 0;
+    z-index: -10;
   }
 
   nav ul.open {
-    display: flex;
-    align-items: center;
+    animation: slideLeft 0.4s ease-in-out 1 forwards;
+  }
+
+  nav ul.closed {
+    animation: slideRight 0.4s ease-in-out 1 forwards;
+  }
+
+  @keyframes slideLeft {
+    from {
+      transform: translateX(-120%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0%);
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideRight {
+    from {
+      transform: translateX(0%);
+      opacity: 1;
+    }
+    to {
+      transform: translateX(-120%);
+      opacity: 0;
+    }
   }
 
   nav ul li {
