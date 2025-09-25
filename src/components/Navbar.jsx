@@ -6,7 +6,7 @@ export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
     <nav className="nav">
-      <h2 className="site-title">ByScott</h2>
+      <a href="/" className="site-title">ByScott</a>
       <div className="menu" onClick={() => setMenuOpen(!menuOpen)}>
         <span></span>
         <span></span>
