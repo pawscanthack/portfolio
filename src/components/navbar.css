@@ -21,6 +21,11 @@ nav .site-title {
   font-weight: bold;
   text-decoration: none;
   color: white;
+  transition: color 0.3s ease;
+}
+
+.site-title:hover {
+  color: var(--clr-neon);
 }
 
 nav ul {
@@ -42,6 +47,7 @@ nav ul li a {
   color: white;
   padding: 0.5rem;
   border-radius: 0.5rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .nav-link a:not(.active):hover {
@@ -72,11 +78,16 @@ nav .menu span {
 }
 
 .resume-link:hover {
-  background-color: rgb(201, 201, 201);
+  background-color: rgb(170, 169, 169);
 }
 
 .active {
   background-color: rgb(37, 61, 167);
+  transition: all 0.3s ease;
+}
+
+.active:hover {
+  background-color: rgb(25, 39, 107);
 }
 
 @media (max-width: 768px) {
