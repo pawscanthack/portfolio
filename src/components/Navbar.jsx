@@ -7,7 +7,7 @@ export const Navbar = () => {
   return (
     <nav className="nav">
       <a href="/" className="site-title">ByScott</a>
-      <div className="menu" onClick={() => setMenuOpen(!menuOpen)}>
+      <div className={`menu ${menuOpen ? "open" : "closed"}`} onClick={() => setMenuOpen(!menuOpen)}>
         <span></span>
         <span></span>
         <span></span>
