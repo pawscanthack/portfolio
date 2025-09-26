@@ -31,11 +31,11 @@ export const Contact = () => {
     <section className="contact-section">
       <div className="contact-section-container">
         <div className="contact-image-container">
-          <img
+{/*           <img
             src={contactImage}
             alt="contact target"
             className="contact-section-image"
-          />
+          /> */}
         </div>
         <div>
           <form className="form-container" onSubmit={handleOnSubmit}>

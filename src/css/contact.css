@@ -6,24 +6,32 @@
 }
 
 .contact-section {
+  background-image: url("../img/scott-dogs-ferry.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-height: 100vh;
   min-width: 100vw;
   margin: 0;
   padding: 0;
 }
-.contact-section-container {
+/* .contact-section-container {
   display: grid;
   grid-template-columns: repeat(2, auto);
   gap: 20px;
   justify-content: space-around;
   min-width: 80vw;
   margin: 6rem;
-}
-.contact-section-image {
-  max-width: 70vw;
+} */
+/* .contact-section-image {
+  max-width: 40%;
   min-width: 20em;
   border-radius: 2em;
-}
+} */
 
 .form-container {
   background-color: rgb(37, 61, 167, 0.5);
