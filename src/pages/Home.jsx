@@ -34,7 +34,13 @@ export const Home = () => {
   }, []);
 
   return (
-    <section className="home-section">
+    <motion.section 
+      className="home-section"
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+      viewport={{ once: true }}
+    >
       <div className="home-section-container">
         <div className="home-section-image-container">
           <img src={hero} alt="profile" className="home-section-image" />
@@ -76,6 +82,6 @@ export const Home = () => {
           </div>
         </NavLink>
       </div>
-    </section>
+    </motion.section>
   );
 };
