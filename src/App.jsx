@@ -14,12 +14,10 @@ function App() {
       <div className="container">
         <PostHogPageviewTracker />
 
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/contactme" element={<Contact />} />
-        </Routes>
+        <Home />
+        <About />
+        <Projects />
+        <Contact />
       </div>
     </>
   );
