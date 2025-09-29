@@ -21,7 +21,9 @@ export const Home = () => {
   return (
     <section className="home-section">
       <div className="home-section-container">
-        <img src={hero} alt="profile" className="home-section-image" />
+        <div className="home-section-image-container">
+          <img src={hero} alt="profile" className="home-section-image" />
+        </div>
         <div className="home-list-container">
           <ul className="home-tag-list">
             <li>Design</li>

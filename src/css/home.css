@@ -21,10 +21,22 @@
   justify-content: center;
 }
 
+.home-section-image-container {
+  background-image: radial-gradient(var(--primary), var(--secondary) 90%);
+  border: var(--secondary) 1px solid;
+  border-radius: 50%;
+  height: 20rem;
+  width: 20rem;
+  overflow: hidden;
+  position: relative;
+}
+
 .home-section-image {
-  max-width: 20em;
-  border-radius: 20px;
-  padding: 1px;
+  height: 100%;
+  width: 110%;
+  transform: scale(1.25);
+  object-fit: contain;
+  position: relative;
 }
 .home-list-container {
   display: flex;
