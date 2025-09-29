@@ -8,7 +8,7 @@
 .home-section {
   display: flex;
   flex-direction: column;
-  gap: 5rem;
+  gap: 6rem;
   height: 100dvh;
   max-height: 100dvh;
   justify-content: center;
@@ -68,7 +68,7 @@
   align-items: center;
   padding: 0;
   margin: 0 auto;
-  width: 18rem;
+  width: 17.6rem;
   gap: 7px;
 }
 

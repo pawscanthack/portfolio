@@ -4,6 +4,7 @@ import { usePostHog } from "posthog-js/react";
 import "../css/home.css";
 import hero from "../img/ft_me2_1.webp";
 import { TypeAnimation } from "react-type-animation";
+import { motion } from "framer-motion";
 
 const typeSequence = [
   "design",
@@ -51,7 +52,12 @@ export const Home = () => {
               className="type-animation-text"
             />
           </div>
-          <p className="it-systems"> IT systems</p>
+          <motion.p 
+          className="it-systems"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.8, delay: 16 }}
+          > IT systems</motion.p>
         </header>
       </div>
       <div className={`contact-button-container ${showButton ? "show" : ""}`}>
@@ -65,7 +71,7 @@ export const Home = () => {
                 });
               }}
             >
-              About Me
+              Get in touch
             </button>
           </div>
         </NavLink>
