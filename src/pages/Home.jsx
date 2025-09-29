@@ -3,6 +3,20 @@ import { NavLink } from "react-router-dom";
 import { usePostHog } from "posthog-js/react";
 import "../css/home.css";
 import hero from "../img/ft_me2_1.webp";
+import { TypeAnimation } from "react-type-animation";
+
+const typeSequence = [
+  "design",
+  3000,
+  "develop",
+  3000,
+  "deploy",
+  3000,
+  "secure",
+  3000,
+  "support",
+  3000,
+];
 
 export const Home = () => {
   const posthog = usePostHog();
@@ -24,14 +38,21 @@ export const Home = () => {
         <div className="home-section-image-container">
           <img src={hero} alt="profile" className="home-section-image" />
         </div>
-        <div className="home-list-container">
-          <ul className="home-tag-list">
-            <li>Design</li>
-            <li>Develop</li>
-            <li>Deploy</li>
-            <li>Secure</li>
-          </ul>
-        </div>
+        <header className="header-container">
+          <h1>Hey there, I'm Scott</h1>
+          <div className="subheader-container">
+            <p>I help you </p>
+            <TypeAnimation
+              speed={15}
+              sequence={typeSequence}
+              wrapper="span"
+              cursor={false}
+              repeat={0}
+              className="type-animation-text"
+            />
+          </div>
+          <p className="it-systems"> IT systems</p>
+        </header>
       </div>
       <div className={`contact-button-container ${showButton ? "show" : ""}`}>
         <NavLink to="/contactme">
@@ -44,7 +65,7 @@ export const Home = () => {
                 });
               }}
             >
-              Let's go!
+              About Me
             </button>
           </div>
         </NavLink>
