@@ -1,9 +1,13 @@
 .about-section-container {
-  display: grid;
-  grid-template-columns: repeat(2, auto);
+  display: flex;
   gap: 20px;
-  max-height: 100vh;
-  padding: 2em;
+  height: 100dvh;
+  max-height: 100dvh;
+  width: 100vw;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-right: 2rem;
+  color: var(--text-light);
 }
 
 .about-content li {
@@ -13,9 +17,11 @@
   text-align: left;
 }
 .about-section-image {
-  max-width: 20vw;
-  min-width: 10rem;
-  border-radius: 4rem;
+  align-self: center;
+  box-shadow: 0 0 1rem rgba(46, 101, 221, 0.527);
+  height: 40rem;
+  border: 1px solid var(--accent);
+  border-radius: 0 4rem 4rem 0;
 }
 
 .linkedin-link-container {
@@ -26,7 +32,7 @@
 }
 
 .linkedin-logo {
-  max-width: 10vw;
+  max-width: 2rem;
 }
 
 @media (max-width: 540px) {
