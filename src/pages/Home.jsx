@@ -8,15 +8,15 @@ import { motion } from "framer-motion";
 
 const typeSequence = [
   "design",
-  3000,
+  1500,
   "develop",
-  3000,
+  1500,
   "deploy",
-  3000,
-  "secure",
-  3000,
+  1500,
   "support",
-  3000,
+  1500,
+  "secure",
+  2000,
 ];
 
 export const Home = () => {
@@ -54,7 +54,7 @@ export const Home = () => {
               sequence={typeSequence}
               wrapper="span"
               cursor={false}
-              repeat={0}
+              repeat={1}
               className="type-animation-text"
             />
           </div>
@@ -62,7 +62,7 @@ export const Home = () => {
           className="it-systems"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 0.8, delay: 16 }}
+          transition={{ duration: 0.8, delay: 1.0 }}
           > IT systems</motion.p>
         </header>
       </div>
