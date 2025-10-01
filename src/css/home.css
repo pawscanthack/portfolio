@@ -68,7 +68,8 @@
   align-items: center;
   padding: 0;
   margin: 0 auto;
-  width: 17.6rem;
+  width: 17.7rem;
+  min-width: fit-content;
   gap: 7px;
 }
 
