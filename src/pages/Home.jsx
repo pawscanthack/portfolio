@@ -48,13 +48,13 @@ export const Home = () => {
         <header className="header-container">
           <h1>Hey there, I'm Scott</h1>
           <div className="subheader-container">
-            <p>I help you </p>
+            <p>I can help you </p>
             <TypeAnimation
               speed={15}
               sequence={typeSequence}
               wrapper="span"
               cursor={false}
-              repeat={1}
+              repeat={Infinity}
               className="type-animation-text"
             />
           </div>
