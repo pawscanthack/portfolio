@@ -9,8 +9,6 @@ import { motion } from "framer-motion";
 const typeSequence = [
   "design",
   1500,
-  "develop",
-  1500,
   "deploy",
   1500,
   "support",
