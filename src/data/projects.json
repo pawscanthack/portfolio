@@ -1,42 +1,49 @@
 {
   "portfolio": [
-    {
+        {
       "id": "1",
+      "src": "/images/LogicApp.png",
+      "title": "Logic App: Entra User Creation Workflow",
+      "description": "Automating user onboarding with streamlined cloud workflows",
+      "link": "https://docs.google.com/presentation/d/e/2PACX-1vTG8kZ70M4avCn_mWEiLx1lryiaXyNx3ab6NCkuWhz41QqZNTmnHab5PdNYCUG96w/pub?start=true&loop=true&delayms=5000"
+    },
+    {
+      "id": "2",
       "src": "/images/password-reset-calculator-sm.png",
       "title": "Password Reset Calculator - React",
       "description": "Date interval calculator built using React",
       "link": "https://date-interval-calculator.vercel.app/"
     },
     {
-      "id": "2",
+      "id": "3",
       "src": "/images/calculator-sm.png",
       "title": "Calculator - React",
       "description": "Simple calculator project built using React",
       "link": "https://react-calculator-phi-ecru.vercel.app/"
     },
     {
-      "id": "3",
+      "id": "4",
       "src": "/images/tic-tac-toe-sm.png",
       "title": "Tic Tac Toe - React",
       "description": "Tic Tac Toe game built using React",
       "link": "https://react-tic-tac-toe-olive-psi.vercel.app/"
     },
     {
-      "id": "4",
+      "id": "5",
       "src": "/images/react-portfolio-sm.png",
       "title": "Simple Portfolio - React",
       "description": "Simple Portfolio built using React",
       "link": "https://react-portfolio-with-tailwind.vercel.app/"
     },
     {
-      "id": "5",
+      "id": "6",
       "src": "/images/react-trivia.png",
       "title": "Trivia - React",
       "description": "Get to know me through trivia",
       "link": "https://react-trivia-beige.vercel.app/"
     },
     {
-      "id": "6",
+      "id": "7",
       "src": "/images/skillzguide-home-sm.png",
       "title": "Skillzguide Website - Flask",
       "description": "AI-driven mapping between job postings and college programs",
