@@ -2,7 +2,22 @@ import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { usePostHog } from "posthog-js/react";
 import "../css/home.css";
-import hero from "../img/profile-pic.jpg";
+import hero from "../img/ft_me2_1.webp";
+import { TypeAnimation } from "react-type-animation";
+import { motion } from "framer-motion";
+
+const typeSequence = [
+  "design",
+  3000,
+  "develop",
+  3000,
+  "deploy",
+  3000,
+  "secure",
+  3000,
+  "support",
+  3000,
+];
 
 export const Home = () => {
   const posthog = usePostHog();
@@ -19,17 +34,37 @@ export const Home = () => {
   }, []);
 
   return (
-    <section className="home-section">
+    <motion.section 
+      className="home-section"
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+      viewport={{ once: true }}
+    >
       <div className="home-section-container">
-        <img src={hero} alt="profile" className="home-section-image" />
-        <div className="home-list-container">
-          <ul className="home-tag-list">
-            <li>Design</li>
-            <li>Develop</li>
-            <li>Deploy</li>
-            <li>Secure</li>
-          </ul>
+        <div className="home-section-image-container">
+          <img src={hero} alt="profile" className="home-section-image" />
         </div>
+        <header className="header-container">
+          <h1>Hey there, I'm Scott</h1>
+          <div className="subheader-container">
+            <p>I help you </p>
+            <TypeAnimation
+              speed={15}
+              sequence={typeSequence}
+              wrapper="span"
+              cursor={false}
+              repeat={0}
+              className="type-animation-text"
+            />
+          </div>
+          <motion.p 
+          className="it-systems"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.8, delay: 16 }}
+          > IT systems</motion.p>
+        </header>
       </div>
       <div className={`contact-button-container ${showButton ? "show" : ""}`}>
         <NavLink to="/contactme">
@@ -42,11 +77,11 @@ export const Home = () => {
                 });
               }}
             >
-              Let's go!
+              Get in touch
             </button>
           </div>
         </NavLink>
       </div>
-    </section>
+    </motion.section>
   );
 };

@@ -29,7 +29,7 @@ nav .site-title {
 }
 
 .site-title:hover {
-  color: var(--clr-neon);
+  color: var(--accent-2);
 }
 
 nav ul {
@@ -58,7 +58,7 @@ nav ul li a {
 }
 
 .nav-link a:not(.active):hover {
-  color: var(--clr-neon);
+  color: var(--accent-2);
 }
 
 nav .menu {
@@ -92,14 +92,14 @@ nav .menu span {
 }
 
 .active {
-  background-color: rgb(37, 61, 167);
+  background-color: var(--secondary);
   transition: all 0.3s ease;
   width: fit-content;
   margin: auto;
 }
 
 .active:hover {
-  background-color: rgb(25, 39, 107);
+  background-color: var(--accent);
 }
 
 @media (max-width: 768px) {
