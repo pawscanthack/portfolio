@@ -1,0 +1,40 @@
+.skills-section-container {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 20px;
+  max-height: 100vh;
+  padding: 2em;
+}
+
+.skills-content li {
+  padding-bottom: 1em;
+}
+.skills-content {
+  text-align: left;
+}
+.skills-section-image {
+  max-width: 20vw;
+  min-width: 10rem;
+  border-radius: 4rem;
+}
+
+.linkedin-link-container {
+  display: block;
+}
+.linkedin-link {
+  text-decoration: none;
+}
+
+.linkedin-logo {
+  max-width: 10vw;
+}
+
+@media (max-width: 540px) {
+  .skills-section-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .skills-section-image {
+    align-self: center;
+  }
+}
