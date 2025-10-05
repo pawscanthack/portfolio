@@ -8,17 +8,6 @@ import { motion } from "framer-motion";
 
 const typeSequence = [
   "design",
-<<<<<<< HEAD
-  3000,
-  "develop",
-  3000,
-  "deploy",
-  3000,
-  "secure",
-  3000,
-  "support",
-  3000,
-=======
   1500,
   "deploy",
   1500,
@@ -26,7 +15,6 @@ const typeSequence = [
   1500,
   "secure",
   2000,
->>>>>>> 71a9840fce08f3514f4498f796efd38fd335a669
 ];
 
 export const Home = () => {
@@ -58,21 +46,13 @@ export const Home = () => {
         <header className="header-container">
           <h1>Hey there, I'm Scott</h1>
           <div className="subheader-container">
-<<<<<<< HEAD
-            <p>I help you </p>
-=======
             <p>I can help you </p>
->>>>>>> 71a9840fce08f3514f4498f796efd38fd335a669
             <TypeAnimation
               speed={15}
               sequence={typeSequence}
               wrapper="span"
               cursor={false}
-<<<<<<< HEAD
-              repeat={0}
-=======
               repeat={Infinity}
->>>>>>> 71a9840fce08f3514f4498f796efd38fd335a669
               className="type-animation-text"
             />
           </div>
@@ -80,11 +60,7 @@ export const Home = () => {
           className="it-systems"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-<<<<<<< HEAD
-          transition={{ duration: 0.8, delay: 16 }}
-=======
           transition={{ duration: 0.8, delay: 1.0 }}
->>>>>>> 71a9840fce08f3514f4498f796efd38fd335a669
           > IT systems</motion.p>
         </header>
       </div>
