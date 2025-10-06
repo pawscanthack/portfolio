@@ -13,72 +13,35 @@ export const About = () => {
         <div className="about-content-container">
           <div className="about-content">
             <p>
-              My name is Scott Davis. I am a Cybersecurity and Network
-              Administration graduate with a passion for coding and automation.
+              Hello! I'm <strong>Scott Davis</strong>, a cybersecurity and IT professional based in Bellevue, WA. 
+              With a strong foundation in <em>IT support</em>, <em>network administration</em>, and <em>security operations</em>, 
+              I bring a unique blend of technical expertise and customer-first service to every challenge I tackle.
             </p>
           </div>
           <div className="about-content">
-            <h2>Can do attitude!</h2>
+            <h2>Cybersecurity is a Lifestyle</h2>
             <p>
-            I am a motivated IT professional with a proven track record of delivering fast, 
-            friendly, and effective technical support. I am adaptable, quick to learn new technologies, 
-            and capable of working independently or as part of a team. With experience in IT support, 
-            systems administration, and cybersecurity, I excel at diagnosing and resolving complex issues, 
-            ensuring smooth and secure operations. My hands-on approach, combined with strong communication skills,
-            enables me to provide exceptional service and help businesses thrive in a rapidly changing tech landscape.
+              In today’s digital age, <strong>IT is cybersecurity</strong>—and for me, it's more than just a profession; 
+              it's a way of life. I thrive on solving complex problems, automating workflows with scripting, and ensuring 
+              systems run securely and efficiently. My experience spans across cloud platforms like <em>Azure</em>, identity 
+              management with <em>Entra</em> and <em>Active Directory</em>, and endpoint administration using <em>Intune</em> 
+              and <em>PowerShell</em>.
+            </p>
+            <p>
+              Whether it's a <strong>part-time</strong>, <strong>full-time</strong>, <strong>contract</strong>, or 
+              <strong>volunteer</strong> opportunity, I’m passionate about contributing to teams that value innovation, 
+              security, and collaboration. I’ve supported diverse environments, responded to security incidents, and helped 
+              organizations recover from ransomware attacks—all while maintaining a 96% customer satisfaction rate.
             </p>
           </div>
           <div className="about-content">
-            <h2>Skills</h2>
-            <ul className="skills-list-container">
-              <li>
-                Networking & Infrastructure: Proficient in TCP/IP, DHCP, DNS, VPN configuration, wireless performance optimization, and VoIP systems.
-              </li>
-              <li>
-                Troubleshooting & Operating Systems: Experienced diagnosing application, hardware, and OS issues across Windows, macOS, Linux, iOS, and Android using GUI and command-line tools.
-              </li>
-              <li>
-                Hardware Support: Skilled at repairing and provisioning client-side hardware including desktops, laptops, peripherals, mobile devices, printers, docking stations, and POS systems.
-              </li>
-              <li>
-                Directory & Identity Management: Advanced user and access administration experience in Active Directory, Entra, and Google Workspace.
-              </li>
-              <li>
-              Service Desk Platforms: Competent in Jira Service Management, AutoTask, ServiceNow, and similar ticketing systems.
-              </li>
-              <li>
-              Scripting & Automation: Proficient in Python and PowerShell for automating tasks, managing systems, and enhancing workflows.
-              </li>
-              <li>
-              Cybersecurity Fundamentals: Knowledgeable in firewalls, endpoint protection, vulnerability management, and security best practices to safeguard IT environments.
-              </li>
-            </ul>
+            <h2>Beyond the Keyboard</h2>
+            <p>
+              Outside of work, I enjoy playing guitar 🎸, diving into <em>Hack The Box</em> challenges, gaming, and spending 
+              time with my two miniature Australian shepherds, <strong>Shu</strong> and <strong>Yulie</strong>. 
+              I believe that staying curious and creative is key to thriving in tech.
+            </p>
           </div>
-          <div className="about-content">
-            <h2>Certifications</h2>
-            <ul className="skills-list-container">
-              <li>
-              Microsoft | MD-102 Certified Endpoint Administrator	September 2025              
-              </li>
-              <li>
-              CompTia | IT Operations Specialist	July 2025
-              </li>
-              <li>
-              CompTia | Network+	July 2025
-              </li>
-              <li>
-              CompTia | A+	April 2025
-              </li>
-              <li>
-              Splunk | Certified Core User	September 2025
-              </li>
-              <li>
-              CompTia | CySA+	August 2024
-              </li>
-              <li>
-              The Python Institute | Certified Associate Programmer	May 2024              
-              </li>
-            </ul>
           </div>
           <div className="linkedin-link-container">
             <a
@@ -96,7 +59,6 @@ export const About = () => {
             </a>
           </div>
         </div>
-      </div>
     </section>
   );
 };
