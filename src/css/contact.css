@@ -12,12 +12,12 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   display: flex;
-  justify-content: center;
+  justify-content: right;
   align-items: center;
   min-height: 100vh;
   min-width: 100vw;
   margin: 0;
-  padding: 0;
+  padding: 4em 0;
 }
 /* .contact-section-container {
   display: grid;
