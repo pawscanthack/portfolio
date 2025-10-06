@@ -1,5 +1,7 @@
 .project-section {
-  padding: 10px;
+  background-color: var(--background-2);
+  color: var(--text-light);
+  padding: 4em 0;
 }
 .project-section-heading {
   font-weight: bold;

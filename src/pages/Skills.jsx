@@ -8,7 +8,6 @@ export const Skills = () => {
         <h1 hidden="true">Let's get to know each other!</h1>
       </div>
       <div className="skills-section-container">
-        <img alt="BC grad" className="skills-section-image" />
         <div className="skills-content-container">
           <div className="skills-content">
             <h2>Skills</h2>

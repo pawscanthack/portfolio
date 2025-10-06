@@ -1,3 +1,9 @@
+.about-section {
+  background-color: var(--background-2);
+  color: var(--text-light);
+  padding: 4em 0;
+}
+
 .about-section-container {
   display: grid;
   grid-template-columns: repeat(2, auto);
@@ -11,6 +17,25 @@
 }
 .about-content {
   text-align: left;
+}
+
+.about-content h2 {
+  filter: brightness(140%);
+  font-size: 3rem;
+  margin: 0;
+  height: fit-content;
+  color: transparent;
+  font-weight: bold;
+  font-family: "Verdana", sans-serif;
+  -webkit-text-stroke: 1.5px var(--accent-2);
+}
+
+.about-content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: var(--text-light);
+  font-family: "Verdana", sans-serif;
+  font-weight: normal;
 }
 .about-section-image {
   max-width: 20vw;
