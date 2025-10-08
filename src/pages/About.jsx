@@ -1,16 +1,36 @@
 import "../css/about.css";
 import aboutPic from "../img/BC_grad.jpeg";
-import linkedInLogo from "../img/LI-In-Bug.png";
+import { Linkedin, Github } from "lucide-react";
 
 export const About = () => {
   return (
-    <section className="about-section">
+    <section className="about-section" id="about">
       <header className="about-section-heading">
         <h2>A Little About Me</h2>
       </header>
       <section className="about-content-container">
-        <img src={aboutPic} alt="BC grad" className="about-section-image" />
-        <div className="about-content-container">
+        <div className="about-image-link-container">
+          <img src={aboutPic} alt="BC grad" className="about-section-image" />
+          <div className="link-container">
+            <a
+              href="https://www.linkedin.com/in/scottdaviscyberpro/"
+              target="_blank"
+              rel="noreferrer"
+              className="social-icon"
+            >
+              <Linkedin size={32} />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/scottdaviscyberpro/"
+              target="_blank"
+              rel="noreferrer"
+              className="social-icon"
+            >
+              <Github size={32} />
+            </a>
+          </div>
+        </div>
+        <div className="about-articles-container">
           <article className="about-content">
             <p>
               Hello! I'm <strong>Scott Davis</strong>, a cybersecurity and IT professional based in Bellevue, WA. 
@@ -42,21 +62,6 @@ export const About = () => {
               I believe that staying curious and creative is key to thriving in tech.
             </p>
           </article>
-          </div>
-          <div className="linkedin-link-container">
-            <a
-              href="https://www.linkedin.com/in/scottdaviscyberpro/"
-              target="_blank"
-              rel="noreferrer"
-              className="linkedin-link"
-            >
-              <img
-                src={linkedInLogo}
-                alt="LinkedIn Logo"
-                className="linkedin-logo"
-              />
-              <p>Visit my LinkedIn page</p>
-            </a>
           </div>
       </section>
     </section>
