@@ -1,13 +1,33 @@
-.about-section-container {
+.about-section {
+  border: 2px solid var(--accent-2);
   display: flex;
+  flex-direction: column;
   gap: 20px;
   height: 100dvh;
   max-height: 100dvh;
+  align-items: start;
   width: 100vw;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  padding-right: 2rem;
+  padding: 2rem 8rem;
   color: var(--text-light);
+}
+
+.about-section-heading h2 {
+  filter: brightness(140%);
+  font-size: 2.5rem;
+  margin: 0;
+  height: fit-content;
+  color: transparent;
+  font-weight: bold;
+  font-family: "Verdana", sans-serif;
+  -webkit-text-stroke: 1.5px var(--accent-2);
+}
+
+.about-content-container {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  align-items: center;
+  width: 100%;
 }
 
 .about-content li {
@@ -18,10 +38,12 @@
 }
 .about-section-image {
   align-self: center;
+  object-fit: cover;
   box-shadow: 0 0 1rem rgba(46, 101, 221, 0.527);
-  height: 40rem;
+  height: 15rem;
+  width: 15rem;
   border: 1px solid var(--accent);
-  border-radius: 0 4rem 4rem 0;
+  border-radius: 50%;
 }
 
 .linkedin-link-container {
