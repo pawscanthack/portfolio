@@ -21,7 +21,7 @@ export const About = () => {
               <Linkedin size={32} />
             </a>
             <a
-              href="https://www.linkedin.com/in/scottdaviscyberpro/"
+              href="https://github.com/pawscanthack"
               target="_blank"
               rel="noreferrer"
               className="social-icon"
@@ -49,7 +49,7 @@ export const About = () => {
             </p>
             <p>
               Whether it's a <strong>part-time</strong>, <strong>full-time</strong>, <strong>contract</strong>, or 
-              <strong>volunteer</strong> opportunity, I’m passionate about contributing to teams that value innovation, 
+              <strong> volunteer</strong> opportunity, I’m passionate about contributing to teams that value innovation, 
               security, and collaboration. I’ve supported diverse environments, responded to security incidents, and helped 
               organizations recover from ransomware attacks—all while maintaining a 96% customer satisfaction rate.
             </p>
