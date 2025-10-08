@@ -11,14 +11,14 @@ export const About = () => {
       <section className="about-content-container">
         <img src={aboutPic} alt="BC grad" className="about-section-image" />
         <div className="about-content-container">
-          <div className="about-content">
+          <article className="about-content">
             <p>
               Hello! I'm <strong>Scott Davis</strong>, a cybersecurity and IT professional based in Bellevue, WA. 
               With a strong foundation in <em>IT support</em>, <em>network administration</em>, and <em>security operations</em>, 
               I bring a unique blend of technical expertise and customer-first service to every challenge I tackle.
             </p>
-          </div>
-          <div className="about-content">
+          </article>
+          <article className="about-content">
             <h2>Cybersecurity is a Lifestyle</h2>
             <p>
               In today’s digital age, <strong>IT is cybersecurity</strong>—and for me, it's more than just a profession; 
@@ -33,15 +33,15 @@ export const About = () => {
               security, and collaboration. I’ve supported diverse environments, responded to security incidents, and helped 
               organizations recover from ransomware attacks—all while maintaining a 96% customer satisfaction rate.
             </p>
-          </div>
-          <div className="about-content">
+          </article>
+          <article className="about-content">
             <h2>Beyond the Keyboard</h2>
             <p>
               Outside of work, I enjoy playing guitar 🎸, diving into <em>Hack The Box</em> challenges, gaming, and spending 
               time with my two miniature Australian shepherds, <strong>Shu</strong> and <strong>Yulie</strong>. 
               I believe that staying curious and creative is key to thriving in tech.
             </p>
-          </div>
+          </article>
           </div>
           <div className="linkedin-link-container">
             <a
