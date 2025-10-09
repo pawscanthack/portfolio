@@ -16,8 +16,9 @@ export const Skills = () => {
         ))}
       </div>
       <h2>Certifications</h2>
-      <ul className="skills-list-container">
-        <li>
+      <div className="cert-list">
+        <img src="/images/endpoint-administrator.webp" alt="Microsoft Endpoint Administrator" />
+        {/* <li>
           Microsoft | MD-102 Certified Endpoint Administrator September 2025
         </li>
         <li>
@@ -37,8 +38,8 @@ export const Skills = () => {
         </li>
         <li>
           The Python Institute | Certified Associate Programmer May 2024
-        </li>
-      </ul>
+        </li> */}
+      </div>
     </section>
   );
 };

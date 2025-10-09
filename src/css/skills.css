@@ -63,15 +63,14 @@
   width: 100%;
 }
 
-.linkedin-link-container {
-  display: block;
-}
-.linkedin-link {
-  text-decoration: none;
+.cert-list {
+  display: flex;
+  gap: 1rem;
 }
 
-.linkedin-logo {
-  max-width: 10vw;
+.cert-list img {
+  width: 12rem;
+  height: auto;
 }
 
 @media (max-width: 540px) {
