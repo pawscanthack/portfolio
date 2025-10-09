@@ -18,6 +18,10 @@ export const Skills = () => {
       <h2>Certifications</h2>
       <div className="cert-list">
         <img src="/images/endpoint-administrator.webp" alt="Microsoft Endpoint Administrator" />
+        <img src="/images/comptia-cios.webp" alt="CompTia IT Operations Specialist" />
+        <img src="/images/comptia-cios.webp" alt="CompTia IT Operations Specialist" />
+        <img src="/images/comptia-cios.webp" alt="CompTia IT Operations Specialist" />
+        <img src="/images/comptia-cios.webp" alt="CompTia IT Operations Specialist" />
         {/* <li>
           Microsoft | MD-102 Certified Endpoint Administrator September 2025
         </li>

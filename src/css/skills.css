@@ -64,12 +64,17 @@
 }
 
 .cert-list {
+  align-items: center;
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
+  justify-content: center;
+  margin: auto 0;
+  padding: 0 2rem;
 }
 
 .cert-list img {
-  width: 12rem;
+  width: 8rem;
   height: auto;
 }
 
