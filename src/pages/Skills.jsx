@@ -1,4 +1,6 @@
 import "../css/skills.css";
+import data from "../data/skills.json";
+import SkillsCard from "../components/SkillsCard";
 import linkedInLogo from "../img/LI-In-Bug.png";
 
 export const Skills = () => {
@@ -11,29 +13,15 @@ export const Skills = () => {
         <div className="skills-content-container">
           <div className="skills-content">
             <h2>Skills</h2>
-            <ul className="skills-list-container">
-              <li>
-                Networking & Infrastructure: Proficient in TCP/IP, DHCP, DNS, VPN configuration, wireless performance optimization, and VoIP systems.
-              </li>
-              <li>
-                Troubleshooting & Operating Systems: Experienced diagnosing application, hardware, and OS issues across Windows, macOS, Linux, iOS, and Android using GUI and command-line tools.
-              </li>
-              <li>
-                Hardware Support: Skilled at repairing and provisioning client-side hardware including desktops, laptops, peripherals, mobile devices, printers, docking stations, and POS systems.
-              </li>
-              <li>
-                Directory & Identity Management: Advanced user and access administration experience in Active Directory, Entra, and Google Workspace.
-              </li>
-              <li>
-              Service Desk Platforms: Competent in Jira Service Management, AutoTask, ServiceNow, and similar ticketing systems.
-              </li>
-              <li>
-              Scripting & Automation: Proficient in Python and PowerShell for automating tasks, managing systems, and enhancing workflows.
-              </li>
-              <li>
-              Cybersecurity Fundamentals: Knowledgeable in firewalls, endpoint protection, vulnerability management, and security best practices to safeguard IT environments.
-              </li>
-            </ul>
+            <div className="skills-card-container">
+              {Object.keys(data?.skills)?.map((category, index) => (
+                <SkillsCard
+                  key={index}
+                  cardTitle={category}
+                  cardContent={data.skills[category]}
+                />
+              ))}
+            </div>
           </div>
           <div className="skills-content">
             <h2>Certifications</h2>

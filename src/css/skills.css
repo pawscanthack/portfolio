@@ -5,11 +5,12 @@
 }
 
 .skills-section-container {
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
   max-height: 100vh;
   padding: 2em;
+  width: 100vw;
 }
 
 .skills-content h2 {
@@ -20,6 +21,7 @@
   color: transparent;
   font-weight: bold;
   font-family: "Verdana", sans-serif;
+  text-align: center;
   -webkit-text-stroke: 1.5px var(--accent-2);
 }
 
@@ -46,6 +48,14 @@
   max-width: 20vw;
   min-width: 10rem;
   border-radius: 4rem;
+}
+
+.skills-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  width: 100%;
 }
 
 .linkedin-link-container {

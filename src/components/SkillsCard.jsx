@@ -1,3 +1,5 @@
+import "./skillsCard.css";
+
 export default function SkillsCard({ cardTitle, cardContent }) {
 
   return (
