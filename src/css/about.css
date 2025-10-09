@@ -173,6 +173,10 @@
 }
 
 @media (max-width: 540px) {
+  .about-section-heading h2 {
+    font-size: 2rem;
+  }
+
   .about-section-container {
     display: flex;
     flex-direction: column;

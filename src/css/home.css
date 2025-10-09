@@ -153,6 +153,14 @@
 }
 
 @media screen and (max-width: 600px) {
+  .home-section {
+    justify-content: flex-start;
+  }
+
+  .home-section-container {
+    padding-top: 8rem;
+  }
+
   .header-container h1 {
     font-size: 2rem;
   }
