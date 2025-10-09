@@ -1,0 +1,51 @@
+{
+  "skills": {
+    "Networking & Infrastructure": [
+      "TCP/IP",
+      "DHCP",
+      "DNS",
+      "VPN configuration",
+      "Wireless Performance Optimization",
+      "VoIP Systems"
+    ],
+    "Troubleshooting & Operating Systems": [
+      "Diagnosing Applications",
+      "Hardware Issues",
+      "Windows",
+      "Linux",
+      "macOS",
+      "iOS",
+      "Android"
+    ],
+    "Hardware Support": [
+      "Desktop Repairs",
+      "Laptop Repairs",
+      "Peripheral Setup",
+      "Printer Configuration",
+      "Docking Stations",
+      "POS Systems"
+    ],
+    "Directory & Identity Management": [
+      "Active Directory",
+      "Entra",
+      "Google Workspace"
+    ],
+    "Service Desk Platforms": [
+      "Jira Service Management",
+      "AutoTask",
+      "ServiceNow"
+    ],
+    "Scripting & Automation": [
+      "Python",
+      "PowerShell",
+      "Automating Tasks",
+      "Enhancing Workflows"
+    ],
+    "Cybersecurity Fundamentals": [
+      "Firewall Configuration",
+      "Endpoint Protection",
+      "Vulnerability Management",
+      "Security Best Practices"
+    ]
+  }
+}
