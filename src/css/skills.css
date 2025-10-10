@@ -3,7 +3,7 @@
   color: var(--text-light);
   padding: 4em 0.5rem;
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
   flex-direction: column;
   width: 100vw;
   height: fit-content;
@@ -67,7 +67,7 @@
   align-items: center;
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 2rem;
   justify-content: center;
   margin: auto 0;
   padding: 0 2rem;
@@ -85,5 +85,9 @@
   }
   .skills-section-image {
     align-self: center;
+  }
+
+  .cert-list img {
+    width: 6rem;
   }
 }

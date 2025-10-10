@@ -19,30 +19,11 @@ export const Skills = () => {
       <div className="cert-list">
         <img src="/images/endpoint-administrator.webp" alt="Microsoft Endpoint Administrator" />
         <img src="/images/comptia-cios.webp" alt="CompTia IT Operations Specialist" />
-        <img src="/images/comptia-cios.webp" alt="CompTia IT Operations Specialist" />
-        <img src="/images/comptia-cios.webp" alt="CompTia IT Operations Specialist" />
-        <img src="/images/comptia-cios.webp" alt="CompTia IT Operations Specialist" />
-        {/* <li>
-          Microsoft | MD-102 Certified Endpoint Administrator September 2025
-        </li>
-        <li>
-          CompTia | IT Operations Specialist July 2025
-        </li>
-        <li>
-          CompTia | Network+ July 2025
-        </li>
-        <li>
-          CompTia | A+ April 2025
-        </li>
-        <li>
-          Splunk | Certified Core User September 2025
-        </li>
-        <li>
-          CompTia | CySA+ August 2024
-        </li>
-        <li>
-          The Python Institute | Certified Associate Programmer May 2024
-        </li> */}
+        <img src="/images/network+.webp" alt="CompTia Network+" />
+        <img src="/images/a+.webp" alt="CompTia A+" />
+        <img src="/images/cysa+.webp" alt="CompTia CySA+" />
+        <img src="/images/splunk-core-user.webp" alt="Splunk Certified Core User" />
+        <img src="/images/pcap.webp" alt="Python Institute Certified Associate Programmer" />
       </div>
     </section>
   );
