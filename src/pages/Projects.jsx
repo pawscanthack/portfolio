@@ -1,51 +1,51 @@
 import data from "../data/projects.json";
 import "../css/projects.css";
-import gitLogo from "../img/github-mark.png";
 
 export const Projects = () => {
+
+  const addFlex = (e) => {
+    const description = e.currentTarget.querySelector('.project-description');
+    if (description) {
+      description.style.display = 'flex';
+    }
+  }
+
+  const removeFlex = (e) => {
+    const description = e.currentTarget.querySelector('.project-description');
+    if (description) {
+      description.style.display = 'none';
+    }
+  }
+
   return (
     <section className="project-section">
-      <div>
-        <div className="project-section-heading">
-          <h2>Recent Projects</h2>
-        </div>
-        <div className="project-section-container">
-          {data?.portfolio?.map((item, index) => (
-            <div key={index}>
-              <div className="project-content">
-                <div className="project-image-container">
-                  <a
-                    href={item.link}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="project-link"
-                  >
-                    <img
-                      src={item.src}
-                      alt={item.src}
-                      className="project-image"
-                    />
-                  </a>
-                </div>
-                <div>
-                  <h3>{item.title}</h3>
-                  <p>{item.description}</p>
-                </div>
+      <div className="project-section-heading">
+        <h2>Recent Projects</h2>
+      </div>
+      <div className="project-section-container">
+        {data?.portfolio?.map((item, index) => (
+          <div key={index}>
+            <div className="project-container"
+              onMouseEnter={addFlex}
+              onMouseLeave={removeFlex}
+              onTap={addFlex}
+              onTapCancel={removeFlex}
+            >
+              <img
+                src={item.src}
+                alt={item.src}
+                className="project-image"
+              />
+              <div className="project-text-container">
+                <h3>{item.title}</h3>
+              </div>
+              <div className="project-description">
+                <p>{item.description}</p>
+                <a className="project-link" href={item.link} target="_blank" rel="noreferrer">View Project</a>
               </div>
             </div>
-          ))}
-        </div>
-        <div className="github-link-container">
-          <a
-            href="https://github.com/pawscanthack"
-            target="_blank"
-            rel="noreferrer"
-            className="github-link"
-          >
-            <img src={gitLogo} alt="Github Logo" className="github-logo" />
-            <p>Visit my GitHub page</p>
-          </a>
-        </div>
+          </div>
+        ))}
       </div>
     </section>
   );
