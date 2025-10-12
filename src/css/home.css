@@ -68,7 +68,7 @@
   align-items: center;
   padding: 0;
   margin: 0 auto;
-  width: 17.7rem;
+  width: 21.5rem;
   min-width: fit-content;
   gap: 7px;
 }
@@ -153,6 +153,14 @@
 }
 
 @media screen and (max-width: 600px) {
+  .home-section {
+    justify-content: flex-start;
+  }
+
+  .home-section-container {
+    padding-top: 8rem;
+  }
+
   .header-container h1 {
     font-size: 2rem;
   }

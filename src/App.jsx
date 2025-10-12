@@ -1,4 +1,3 @@
-import { Route, Routes } from "react-router-dom";
 import { Navbar } from "./components/Navbar";
 import { Home } from "./pages/Home";
 import { About } from "./pages/About";
@@ -15,13 +14,11 @@ function App() {
       <div className="container">
         <PostHogPageviewTracker />
 
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/skills" element={<Skills />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/contactme" element={<Contact />} />
-        </Routes>
+        <Home />
+        <About />
+        <Skills />
+        <Projects />
+        <Contact />
       </div>
     </>
   );
