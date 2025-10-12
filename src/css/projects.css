@@ -3,6 +3,7 @@
   color: var(--text-light);
   display: flex;
   flex-direction: column;
+  gap: 2rem;
   padding: 4em 0;
   height: fit-content;
   min-height: 100dvh;
