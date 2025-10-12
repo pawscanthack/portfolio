@@ -1,7 +1,6 @@
 import emailjs from "emailjs-com";
 import "../css/contact.css";
 /*import contactImage from "../img/scott-and-dogs-cropped.jpeg";*/
-import contactImage from "../img/scott-dogs-ferry.jpg";
 import { usePostHog } from "posthog-js/react";
 
 export const Contact = () => {
@@ -28,7 +27,7 @@ export const Contact = () => {
       });
   };
   return (
-    <section className="contact-section">
+    <section className="contact-section" id="contactme">
       <div className="contact-section-container">
         <div className="contact-image-container">
 {/*           <img

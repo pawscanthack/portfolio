@@ -1,18 +1,33 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import "./navbar.css";
 
 export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const navRef = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (navRef.current && !navRef.current.contains(event.target) && menuOpen) {
+        setMenuOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [menuOpen]);
+
   return (
-    <nav className="nav">
+    <nav className="nav" id="navbar" ref={navRef}>
       <a href="/" className="site-title">ByScott</a>
       <div className={`menu ${menuOpen ? "open" : "closed"}`} onClick={() => setMenuOpen(!menuOpen)}>
         <span></span>
         <span></span>
         <span></span>
       </div>
-      <ul className={menuOpen ? "open" : "closed"}>
+      <ul className={menuOpen ? "open" : "closed"} onClick={() => setMenuOpen(false)}>
         <li className="nav-link">
           <a href="/">Home</a>
         </li>
@@ -20,13 +35,13 @@ export const Navbar = () => {
           <a href="#about">About</a>
         </li>
         <li className="nav-link">
-          <a href="/skills">Skills</a>
+          <a href="#skills">Skills</a>
         </li>
         <li className="nav-link">
-          <a href="/projects">Projects</a>
+          <a href="#projects">Projects</a>
         </li>
         <li className="nav-link">
-          <a href="/contactme">Contact Me</a>
+          <a href="#contactme">Contact Me</a>
         </li>
         <li>
           <Link
