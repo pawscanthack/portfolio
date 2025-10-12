@@ -20,13 +20,13 @@ export const Navbar = () => {
           <a href="#about">About</a>
         </li>
         <li className="nav-link">
-          <a href="/skills">Skills</a>
+          <a href="#skills">Skills</a>
         </li>
         <li className="nav-link">
-          <a href="/projects">Projects</a>
+          <a href="#projects">Projects</a>
         </li>
         <li className="nav-link">
-          <a href="/contactme">Contact Me</a>
+          <a href="#contactme">Contact Me</a>
         </li>
         <li>
           <Link

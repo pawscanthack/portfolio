@@ -27,7 +27,7 @@ export const Contact = () => {
       });
   };
   return (
-    <section className="contact-section">
+    <section className="contact-section" id="contactme">
       <div className="contact-section-container">
         <div className="contact-image-container">
 {/*           <img
