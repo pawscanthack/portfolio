@@ -58,7 +58,7 @@
 
 .form-element input,
 textarea {
-  background-color: var(--secondary);
+  background-color: #10275eb4;
   padding: 8px;
   border-radius: 10px;
   border: 1px solid black;
