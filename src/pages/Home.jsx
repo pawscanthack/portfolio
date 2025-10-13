@@ -65,20 +65,41 @@ export const Home = () => {
         </header>
       </div>
       <div className={`contact-button-container ${showButton ? "show" : ""}`}>
-        <NavLink to="/contactme">
-          <div>
-            <button
-              className={`contact-button ${showButton ? "show" : ""}`}
-              onClick={() => {
-                posthog.capture("contact_button_clicked", {
-                  user_name: "Testing Testing 123",
-                });
-              }}
-            >
-              Get in touch
-            </button>
-          </div>
-        </NavLink>
+        <div>
+          <button
+            className={`contact-button ${showButton ? "show" : ""}`}
+            onClick={() => {
+              posthog.capture("contact_button_clicked", {
+                user_name: "Testing Testing 123",
+              });
+
+              const el = document.getElementById("contactme");
+              if (!el) return;
+
+              const duration = 1200; // ms — increase to make it slower
+              const start = window.pageYOffset;
+              const target = el.getBoundingClientRect().top + window.pageYOffset;
+              const distance = target - start;
+              const easeInOutQuad = (t) =>
+                t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
+
+              let startTime = null;
+              const step = (timestamp) => {
+                if (!startTime) startTime = timestamp;
+                const elapsed = timestamp - startTime;
+                const progress = Math.min(elapsed / duration, 1);
+                const eased = easeInOutQuad(progress);
+                window.scrollTo(0, start + distance * eased);
+                if (elapsed < duration) {
+                  requestAnimationFrame(step);
+                }
+              };
+              requestAnimationFrame(step);
+            }}
+          >
+            Get in touch
+          </button>
+        </div>
       </div>
     </motion.section>
   );
