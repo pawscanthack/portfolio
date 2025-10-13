@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 import { usePostHog } from "posthog-js/react";
 import "../css/home.css";
 import hero from "../img/ft_me2_1.webp";
